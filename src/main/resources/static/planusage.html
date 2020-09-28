@@ -1,0 +1,99 @@
+
+<!--     <head>
+    
+        <title>Plan Usage Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="profileupdate.css">
+       
+    </head>
+
+   -->              
+<!------------------------------------------------Form coding--------------------------------------------------------------------->
+                
+                
+            <div id="formContent" ng-controller="plansusageController" data-ng-init="init()">
+              <!-- Tabs Titles -->
+          
+              <!-- Icon image -->
+              <!--<div class="fadeIn first">
+                <img src="image/login.svg" id="icon" alt="User Icon" />
+              </div>-->
+          
+              <!-- Registration Form -->
+               <form>
+			  
+			     <table class="table table-striped w-auto">
+
+                      <div class="table-responsive text-nowrap">
+                          <!--Table-->
+                          <table class="table table-striped" id= "my_td"><h5>Current Plan Details</h5>
+                
+                           
+                              <tr>
+                                <th scope="row">Plan Activated On :</th>
+                                <td ng-model="plan_start_date">{{plan_start_date}}</td>
+                              
+                              </tr>
+                              <tr>
+                              <th scope="row">Plan Ends On :</th>
+                              <td ng-model="plan_end_date">{{plan_end_date}}</td>
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row">Queries Used :</th>
+                              <td ng-model="used_queries_count">{{used_queries_count}}</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Queries Remaining :</th>
+                              <td ng-model="leftover_queries_count">{{leftover_queries_count}}</td>                              
+                            </tr>
+                         
+                         </table>
+					  </div>
+                        <br><br>
+                         <!--  <table class="table table-striped"><h5 style=" margin-left: 530px;">Upgrade Your Plan</h5>
+                
+                          Table head
+                           <thead>
+                             <tr>
+                              <th></th>
+                              <th style=" text-align: center;">Plan Description</th>
+                          
+                              <th style=" text-align: center;"> No. Of Queries</th>
+                              <th style=" text-align: center;"> Plan Validity Days</th>
+                              <th style=" text-align: center;"> Plan Value</th>
+                             </tr>
+                          </thead>
+                          Table head
+                
+                          Table body
+                          <tbody id="mytable">
+                       
+                          </tbody>
+                
+                        </table>
+                 
+                        Table
+                      --> 
+                      </div>
+                     
+              </form>
+              <!-- Remind Passowrd -->
+             
+          
+            </div>
+              
+                
+                
+                
+              
+                    
+                   
+            
+        </div>
+                
+    </div>
+                 

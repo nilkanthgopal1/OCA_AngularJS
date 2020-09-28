@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f3f5f9;
+}
+
+.wrapper{
+    display: flex;
+    position: relative; 
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #4b4276;
+    padding: 30px 0;
+}
+
+.wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    color: #F0FFF0;
+}
+
+.wrapper .sidebar ul li a{
+    color: #bdb8d7;
+    display: block;
+}
+
+.wrapper .sidebar ul li:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.wrapper .sidebar ul li:hover a{
+    color: #fff;
+}
+
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+    
+}
+
+.wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*----------------------- css for form ------------------------------------*/
+
+
+
+#formContent {
+   max-width: 500px;
+   width: 100%;
+   margin: 20px auto;
+   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+   padding: 30px;
+   -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  
+}
+
+
+
+
+
+
+/* FORM TYPOGRAPHY*/
+/* Simple CSS3 Fade-in Animation */
+
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:30%;
+}
+
+i.fa{
+  font-size: 25px;
+  position: absolute;
+  left: 380px;
+  top: 150px;
+}
+
+
+/*Wrapper2 Class*/
+.wrapper2{
+    max-width: 500px;
+   width: 100%;
+   margin: 20px auto;
+   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+   padding: 30px;
+   -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}
+
+.wrapper2 .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper2 .form{
+  width: 100%;
+}
+
+.wrapper2 .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper2 .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 16px;
+}
+
+.wrapper2 .form .inputfield .input,
+.wrapper2 .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper2 .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper2 .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+  
+}
+
+.wrapper2 .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper2 .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper2 .form .inputfield .input:focus,
+.wrapper2 .form .inputfield .textarea:focus,
+.wrapper2 .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper2 .form .inputfield p{
+   font-size: 16px;
+   color: #757575;
+}
+
+.wrapper2 .form .inputfield .btn-editprofile{
+   background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px 10px 20px 80px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper2 .form .inputfield .btn-editprofile:hover{
+  background-color: #39ace7;
+}
+
+.wrapper2 .form .inputfield:last-child{
+  margin-bottom: -10;
+}
+
+@media (max-width:420px) {
+  .wrapper2 .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper2 .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper2 .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+
+select {
+
+text-align: center;
+padding-right: 29px;
+
+}
+
+option {
+  text-align: center;
+  /* reset to left*/
+}
+
+
+
+/*--------------- css for dropdown item in centre align--------------------------*/
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+select {
+  text-align: center;
+  text-align-last: center;
+}
+option {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

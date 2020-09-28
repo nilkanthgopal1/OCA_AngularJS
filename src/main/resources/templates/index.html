@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="css/commonStyle.css">
+  <!-- AngularJS-->
+  <script src="https://code.angularjs.org/1.8.0/angular.js"></script>
+  <script src="https://code.angularjs.org/1.8.0/angular-route.js"></script>
+  <script src="https://code.angularjs.org/1.8.0/angular-sanitize.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-cloak>
+  <div class="wrapper">
+
+    <div class="sidebar">
+
+      <h2>Online Comment Analyzer</h2>
+      <ul>
+        <li><a href="#userprofile">User Profile</a></li>
+        <li><a href="#updateprofile">Update Profile</a></li>
+        <li><a href="#sapage">Sentiment Analysis</a></li>
+        <li><a href="#changepassword">Change Password</a></li>
+        <li><a href="#planusage">Plans Usage</a></li>
+        <li><a href="#plansprice">Plans & Pricing</a></li>
+        <li><a href="/logout">Logout</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class="main_content">
+     
+      <div class="header" style="text-align: right;"><label for="subscriber_code" style="text-align: right;">Subscriber
+          Code: <span id="subscribeCode">{{subscriberCode}}</span></label>
+      </div>
+      <br><br>
+
+      <ng-view></ng-view>
+    </div>
+</body>
+
+</html>

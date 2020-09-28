@@ -1,0 +1,94 @@
+<html>
+
+    <head>
+    
+        <title>Plans And Pricing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="planspricing.css">
+                
+        
+    
+    </head>
+	
+	  
+                
+<!------------------------------------------------Form coding--------------------------------------------------------------------->
+                
+                
+                <div id="formContent" ng-controller="planspricingController" data-ng-init="init()">
+              <!-- Tabs Titles -->
+          
+              <!-- Icon image -->
+              <!-- <div class="fadeIn first">
+                <img src="image/login.svg" id="icon" alt="User Icon" />
+              </div>-->
+          
+              <!-- Registration Form -->
+              <form>
+			  
+			  
+
+                    <div class="table-responsive text-nowrap">
+                        <!--Table-->
+                        <table class="table table-striped">
+                
+                          <!--Table head-->
+                           <thead>
+                             <tr scope="row">
+                              
+                              <th scope="row">Plan Description</th>
+                          
+                              <th scope="row"> No. Of Queries</th>
+                              <th scope="row"> Plan Validity Days</th>
+                              <th scope="row"> Plan Value</th>
+                             </tr>
+                          </thead>
+                          <!--Table head-->
+                
+                          <!--Table body-->
+                          <tbody ng-model="mytable" >
+                          <tr scope="row" data-ng-repeat="plan in planDetails.data.plans">
+                           <td> {{plan.plan_description}}</td>
+                           <td> {{plan.plan_max_queries}}</td>
+                           <td> {{plan.plan_validity_days}}</td>
+                           <td> {{plan.plan_value}}</td>
+                           <td><input class="radioBtn" type="radio" name="plans" ng-model="$parent.planSelected" value={{plan.plan_value}},{{plan.plan_description}}></td>
+                        
+                           
+                          </tr>
+                          
+                          </tbody>
+                         <tr scope="row">
+                         
+                         </tr>
+                        </table>
+                        <div>
+                         <button class="btn btn-success" ng-click="buyPlan()">Buy</button>
+                        </div>
+                        <br>
+                        <!--Table-->
+                      </div>
+                     
+              </form>
+              <!-- Remind Passowrd -->
+             
+          
+            </div>
+                
+                
+                
+                
+                
+                
+              
+                    
+                   
+            
+                </div>
+                
+            </div>
+                 
+    
